@@ -1,0 +1,7 @@
+*.zip
+cpp/proj.ios_mac/cpp.xcodeproj/project.xcworkspace
+cpp/proj.ios_mac/cpp.xcodeproj/xcuserdata
+js/frameworks/runtime-src/proj.ios_mac/js.xcodeproj/project.xcworkspace
+js/frameworks/runtime-src/proj.ios_mac/js.xcodeproj/xcuserdata
+lua/frameworks/runtime-src/proj.ios_mac/lua.xcodeproj/project.xcworkspace
+lua/frameworks/runtime-src/proj.ios_mac/lua.xcodeproj/xcuserdata
