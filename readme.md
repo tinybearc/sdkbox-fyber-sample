@@ -2,7 +2,7 @@ sdkbox fyber with cocos framework 3.6 example
 ---
 
 ```
-git clone https://github.com/yinjimmy/sdkbox-fyber-sample.git
+git clone https://github.com/chukong/sdkbox-fyber-sample.git
 git submodule update --init
 ```
 
