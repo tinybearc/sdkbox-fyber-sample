@@ -17,9 +17,7 @@
 		22454EF0A5C00F928A7EE3C6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E4F19B9B8849EA6FA1023 /* CFNetwork.framework */; };
 		24C54017B9FDAAEAC3002C30 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A940F1B310FA3BA8C0F053 /* CoreTelephony.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		33C9494DB2E67A878ECD1A0C /* res in Resources */ = {isa = PBXBuildFile; fileRef = 7EEE4C20BD063D34B734081E /* res */; };
 		3E0B4B6FBD08E8338E1BFD87 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49254A629C3456093D9B1480 /* StoreKit.framework */; };
-		41984F67B85E1B57CB1DF40A /* res in Resources */ = {isa = PBXBuildFile; fileRef = 7EEE4C20BD063D34B734081E /* res */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
@@ -129,7 +127,6 @@
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		61A24995AB0997EDBA885CC1 /* PluginFyber.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginFyber.framework; sourceTree = "<group>"; };
-		7EEE4C20BD063D34B734081E /* res */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = res; path = ../Resources/res; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		89A940F1B310FA3BA8C0F053 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		92354C5E8C2CC52E842BBC03 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -291,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				9FC790331BABED030019C2C9 /* sdkbox_config.json */,
-				7EEE4C20BD063D34B734081E /* res */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -458,7 +454,6 @@
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				9FC790341BABED030019C2C9 /* sdkbox_config.json in Resources */,
-				33C9494DB2E67A878ECD1A0C /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
-				41984F67B85E1B57CB1DF40A /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
