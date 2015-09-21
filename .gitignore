@@ -1,3 +1,5 @@
+build/
+simulator/
 *.zip
 cpp/proj.ios_mac/cpp.xcodeproj/project.xcworkspace
 cpp/proj.ios_mac/cpp.xcodeproj/xcuserdata
