@@ -3,7 +3,7 @@
 USING_NS_CC;
 using namespace sdkbox;
 #define DEFAULT_PLACEMENT_ID "rmb"
-#define DEFAULT_CURRENCY_NAME "RMB"
+#define DEFAULT_CURRENCY_NAME "coins"
 
 static const char * BOOL_TO_STRING(bool ok)
 {
@@ -53,7 +53,7 @@ bool HelloWorld::init()
                                     }),
                                   MenuItemFont::create("showOfferWall", [](Ref*) {
                                         CCLOG("[Fyber] showOfferWall");
-                                        PluginFyber::showOfferWall(DEFAULT_PLACEMENT_ID);
+                                        PluginFyber::showOfferWall();
                                     }),
                                   MenuItemFont::create("request offers", [](Ref*) {
                                         CCLOG("[Fyber] request offers");

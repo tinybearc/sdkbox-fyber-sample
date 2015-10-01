@@ -11,6 +11,15 @@
 
 namespace sdkbox
 {
+    static const int FYB_OFFERWALL_PRESENTED = 1;
+    static const int FYB_OFFERWALL_DISMISSED = 2;
+    static const int FYB_OFFERWALL_ERROR     = 3;
+
+    static const int FYB_REWARDED_VIDEO_STARTED = 1;
+    static const int FYB_REWARDED_VIDEO_DISMISS = 2;
+    static const int FYB_REWARDED_VIDEO_ERROR   = 3;
+
+
     class FyberListener
     {
     public:
@@ -18,14 +27,14 @@ namespace sdkbox
         // Virtual Currency Connection Delegate
         //
 
-        virtual void onVirtualCurrencyConnectorFailed(int error,
-                                                      const std::string& errorCode,
+        virtual void onVirtualCurrencyConnectorFailed(int error,                    // deprecated filed, always: 0
+                                                      const std::string& errorCode, // deprecated filed, alwasy: ""
                                                       const std::string& errorMsg) = 0;
         virtual void onVirtualCurrencyConnectorSuccess(double deltaOfCoins,
                                                        const std::string& currencyId,
                                                        const std::string& currencyName,
                                                        const std::string& transactionId) = 0;
-        
+
         //
         // Interstitial
         //
@@ -34,18 +43,18 @@ namespace sdkbox
         virtual void onInterstitialDidShow() = 0;
         virtual void onInterstitialDismiss(const std::string& reason) = 0;
         virtual void onInterstitialFailed() = 0;
-        
+
         //
-        // Brand Engage Client
+        // Rewarded Video
         //
-        
+
         virtual void onBrandEngageClientReceiveOffers(bool areOffersAvailable) = 0;
         virtual void onBrandEngageClientChangeStatus(int status, const std::string& msg) = 0;
 
         //
         // Offer Wall
         //
-        
+
         virtual void onOfferWallFinish(int status) = 0;
     };
 
@@ -68,23 +77,31 @@ namespace sdkbox
         static FyberListener* getListener();
 
         /**
-         * Remove the listener, and can't listen to events anymore
+         * Remove the listener, and can't listen to events anymore.
          */
         static void removeListener();
 
+        // offer wall
+
         /**
-         * Presents the SponsorPay Mobile OfferWall as a child view controller of your own view controller.
+         * Presents the Fyber Mobile OfferWall as a child view controller of your own view controller.
          */
-        static void showOfferWall(const std::string& placementId = "");
-        
+        static void showOfferWall();
+
+
+        // rewarded video
+
         /**
-         * Queries the server for BrandEngage offers availability.
+         * Request the server for rewarded video availability.
          */
         static void requestOffers(const std::string& placementId = "");
         /**
-         * Starts running an available engagement.
+         * Show an available rewarded video.
          */
         static void showOffers();
+
+
+        // interstitial
 
         /**
          * Check if interstitial ads are available
@@ -94,10 +111,9 @@ namespace sdkbox
          * Shows an interstitial ad. Check first that one is ready to be shown with requestInterstitial.
          */
         static void showInterstitial();
-        
+
         /**
-         * Fetches the amount of a given currency earned since the last time this method was
-         * invoked for the current user ID / app ID combination.
+         * Queries the server for BrandEngage offers availability.
          */
         static void requestDeltaOfCoins(const std::string& currencyId = "");
     };
