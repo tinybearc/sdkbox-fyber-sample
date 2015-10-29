@@ -10,7 +10,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp ../../Classes/AppDelegate.cpp ../../Classes
 
 LOCAL_LDLIBS := -landroid -llog
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
-LOCAL_WHOLE_STATIC_LIBRARIES := PluginFyber sdkbox
+LOCAL_WHOLE_STATIC_LIBRARIES := PluginFyber sdkbox PluginVungle PluginAdColony PluginChartboost
 
 LOCAL_STATIC_LIBRARIES := cocos2dx_static
 
@@ -20,3 +20,6 @@ $(call import-add-path, $(LOCAL_PATH))
 $(call import-module,./prebuilt-mk)
 $(call import-module, ./sdkbox)
 $(call import-module, ./pluginfyber)
+$(call import-module, ./pluginvungle)
+$(call import-module, ./pluginadcolony)
+$(call import-module, ./pluginchartboost)

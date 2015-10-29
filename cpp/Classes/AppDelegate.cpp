@@ -24,7 +24,7 @@ void AppDelegate::initGLContextAttrs()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
-
+    
     sdkbox::PluginFyber::init();
 
     // initialize director
