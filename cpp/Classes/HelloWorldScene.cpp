@@ -53,7 +53,7 @@ bool HelloWorld::init()
                                     }),
                                   MenuItemFont::create("showOfferWall", [](Ref*) {
                                         CCLOG("[Fyber] showOfferWall");
-                                        PluginFyber::showOfferWall(DEFAULT_PLACEMENT_ID);
+                                        PluginFyber::showOfferWall();
                                     }),
                                   MenuItemFont::create("request offers", [](Ref*) {
                                         CCLOG("[Fyber] request offers");
