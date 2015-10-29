@@ -2,8 +2,8 @@
 
 USING_NS_CC;
 using namespace sdkbox;
-#define DEFAULT_PLACEMENT_ID "rmb"
-#define DEFAULT_CURRENCY_NAME "RMB"
+#define DEFAULT_PLACEMENT_ID "coins"
+#define DEFAULT_CURRENCY_NAME "coins"
 
 static const char * BOOL_TO_STRING(bool ok)
 {

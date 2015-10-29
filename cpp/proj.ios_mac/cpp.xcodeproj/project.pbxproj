@@ -63,7 +63,7 @@
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		937448DE984E1725477D36A3 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6164CB084C9194A8493EDDD /* MediaPlayer.framework */; };
 		9D2B4DD28DBBB2AF20A1B547 /* PluginFyber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A24995AB0997EDBA885CC1 /* PluginFyber.framework */; };
-		9FC790341BABED030019C2C9 /* sdkbox_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC790331BABED030019C2C9 /* sdkbox_config.json */; settings = {ASSET_TAGS = (); }; };
+		9FC790341BABED030019C2C9 /* sdkbox_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FC790331BABED030019C2C9 /* sdkbox_config.json */; };
 		A0E0446CBD24C3315D268DFA /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0E441CA891805BCDF81F27 /* libcocos2d Mac.a */; };
 		A4904012AF58EE9402A64D1A /* sdkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C85468F888EE0965586AA3F /* sdkbox.framework */; };
 		B5E045869987CEC536E1AE98 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146B4F9792E15C0B68908A87 /* AdSupport.framework */; };
@@ -529,6 +529,7 @@
 					"-force_load",
 					PluginFyber.framework/PluginFyber,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2dx.Fyber;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -570,6 +571,7 @@
 					"-force_load",
 					PluginFyber.framework/PluginFyber,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocos2dx.Fyber;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
