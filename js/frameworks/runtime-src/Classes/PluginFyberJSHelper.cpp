@@ -193,7 +193,7 @@ void register_all_PluginFyberJS_helper(JSContext* cx, JS::HandleObject global) {
     REGISTE_FYBER_FUNCTIONS
 }
 #else
-void register_PluginFyberJS_helper(JSContext* cx, JSObject* obj) {
+void register_all_PluginFyberJS_helper(JSContext* cx, JSObject* obj) {
     // first, try to get the ns
     JS::RootedValue nsval(cx);
     JS::RootedObject pluginObj(cx);

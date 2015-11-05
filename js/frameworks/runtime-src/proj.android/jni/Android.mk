@@ -14,13 +14,11 @@ LOCAL_WHOLE_STATIC_LIBRARIES := PluginFyber sdkbox
 
 
 LOCAL_STATIC_LIBRARIES := cocos2d_js_static
-LOCAL_STATIC_LIBRARIES += cocos2d_simulator_static
 
 include $(BUILD_SHARED_LIBRARY)
 $(call import-add-path, $(LOCAL_PATH))
 
 
 $(call import-module,scripting/js-bindings/proj.android/prebuilt-mk)
-$(call import-module,tools/simulator/libsimulator/proj.android/prebuilt-mk)
 $(call import-module, ./sdkbox)
 $(call import-module, ./pluginfyber)
