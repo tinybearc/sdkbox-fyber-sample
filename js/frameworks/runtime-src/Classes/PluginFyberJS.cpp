@@ -2,6 +2,8 @@
 #include "cocos2d_specifics.hpp"
 #include "PluginFyber/PluginFyber.h"
 #include "SDKBoxJSHelper.h"
+#include "sdkbox/sdkbox.h"
+
 
 #if defined(MOZJS_MAJOR_VERSION)
 #if MOZJS_MAJOR_VERSION >= 33
@@ -107,8 +109,17 @@ JSObject *jsb_sdkbox_PluginFyber_prototype;
 bool js_PluginFyberJS_PluginFyber_showOffers(JSContext *cx, uint32_t argc, jsval *vp)
 {
     JS::CallArgs args = JS::CallArgsFromVp(argc, vp);
+    bool ok = true;
     if (argc == 0) {
         sdkbox::PluginFyber::showOffers();
+        args.rval().setUndefined();
+        return true;
+    }
+    if (argc == 1) {
+        std::string arg0;
+        ok &= jsval_to_std_string(cx, args.get(0), &arg0);
+        JSB_PRECONDITION2(ok, cx, false, "js_PluginFyberJS_PluginFyber_showOffers : Error processing arguments");
+        sdkbox::PluginFyber::showOffers(arg0);
         args.rval().setUndefined();
         return true;
     }
@@ -118,8 +129,18 @@ bool js_PluginFyberJS_PluginFyber_showOffers(JSContext *cx, uint32_t argc, jsval
 #elif defined(JS_VERSION)
 JSBool js_PluginFyberJS_PluginFyber_showOffers(JSContext *cx, uint32_t argc, jsval *vp)
 {
+    jsval *argv = JS_ARGV(cx, vp);
+    JSBool ok = JS_TRUE;
     if (argc == 0) {
         sdkbox::PluginFyber::showOffers();
+        JS_SET_RVAL(cx, vp, JSVAL_VOID);
+        return JS_TRUE;
+    }
+    if (argc == 1) {
+        std::string arg0;
+        ok &= jsval_to_std_string(cx, argv[0], &arg0);
+        JSB_PRECONDITION2(ok, cx, JS_FALSE, "Error processing arguments");
+        sdkbox::PluginFyber::showOffers(arg0);
         JS_SET_RVAL(cx, vp, JSVAL_VOID);
         return JS_TRUE;
     }
@@ -155,17 +176,8 @@ JSBool js_PluginFyberJS_PluginFyber_requestInterstitial(JSContext *cx, uint32_t 
 bool js_PluginFyberJS_PluginFyber_showOfferWall(JSContext *cx, uint32_t argc, jsval *vp)
 {
     JS::CallArgs args = JS::CallArgsFromVp(argc, vp);
-    bool ok = true;
     if (argc == 0) {
         sdkbox::PluginFyber::showOfferWall();
-        args.rval().setUndefined();
-        return true;
-    }
-    if (argc == 1) {
-        std::string arg0;
-        ok &= jsval_to_std_string(cx, args.get(0), &arg0);
-        JSB_PRECONDITION2(ok, cx, false, "js_PluginFyberJS_PluginFyber_showOfferWall : Error processing arguments");
-        sdkbox::PluginFyber::showOfferWall(arg0);
         args.rval().setUndefined();
         return true;
     }
@@ -175,18 +187,8 @@ bool js_PluginFyberJS_PluginFyber_showOfferWall(JSContext *cx, uint32_t argc, js
 #elif defined(JS_VERSION)
 JSBool js_PluginFyberJS_PluginFyber_showOfferWall(JSContext *cx, uint32_t argc, jsval *vp)
 {
-    jsval *argv = JS_ARGV(cx, vp);
-    JSBool ok = JS_TRUE;
     if (argc == 0) {
         sdkbox::PluginFyber::showOfferWall();
-        JS_SET_RVAL(cx, vp, JSVAL_VOID);
-        return JS_TRUE;
-    }
-    if (argc == 1) {
-        std::string arg0;
-        ok &= jsval_to_std_string(cx, argv[0], &arg0);
-        JSB_PRECONDITION2(ok, cx, JS_FALSE, "Error processing arguments");
-        sdkbox::PluginFyber::showOfferWall(arg0);
         JS_SET_RVAL(cx, vp, JSVAL_VOID);
         return JS_TRUE;
     }
@@ -308,8 +310,17 @@ JSBool js_PluginFyberJS_PluginFyber_requestOffers(JSContext *cx, uint32_t argc, 
 bool js_PluginFyberJS_PluginFyber_init(JSContext *cx, uint32_t argc, jsval *vp)
 {
     JS::CallArgs args = JS::CallArgsFromVp(argc, vp);
+    bool ok = true;
     if (argc == 0) {
         sdkbox::PluginFyber::init();
+        args.rval().setUndefined();
+        return true;
+    }
+    if (argc == 1) {
+        std::string arg0;
+        ok &= jsval_to_std_string(cx, args.get(0), &arg0);
+        JSB_PRECONDITION2(ok, cx, false, "js_PluginFyberJS_PluginFyber_init : Error processing arguments");
+        sdkbox::PluginFyber::init(arg0);
         args.rval().setUndefined();
         return true;
     }
@@ -319,8 +330,18 @@ bool js_PluginFyberJS_PluginFyber_init(JSContext *cx, uint32_t argc, jsval *vp)
 #elif defined(JS_VERSION)
 JSBool js_PluginFyberJS_PluginFyber_init(JSContext *cx, uint32_t argc, jsval *vp)
 {
+    jsval *argv = JS_ARGV(cx, vp);
+    JSBool ok = JS_TRUE;
     if (argc == 0) {
         sdkbox::PluginFyber::init();
+        JS_SET_RVAL(cx, vp, JSVAL_VOID);
+        return JS_TRUE;
+    }
+    if (argc == 1) {
+        std::string arg0;
+        ok &= jsval_to_std_string(cx, argv[0], &arg0);
+        JSB_PRECONDITION2(ok, cx, JS_FALSE, "Error processing arguments");
+        sdkbox::PluginFyber::init(arg0);
         JS_SET_RVAL(cx, vp, JSVAL_VOID);
         return JS_TRUE;
     }
@@ -535,6 +556,8 @@ void register_all_PluginFyberJS(JSContext* cx, JS::HandleObject obj) {
     get_or_create_js_obj(cx, obj, "sdkbox", &ns);
 
     js_register_PluginFyberJS_PluginFyber(cx, ns);
+
+    sdkbox::setProjectType("js");
 }
 #else
 void register_all_PluginFyberJS(JSContext* cx, JSObject* obj) {
@@ -552,6 +575,8 @@ void register_all_PluginFyberJS(JSContext* cx, JSObject* obj) {
     obj = ns;
 
     js_register_PluginFyberJS_PluginFyber(cx, obj);
+
+    sdkbox::setProjectType("js");
 }
 #endif
 #elif defined(JS_VERSION)
@@ -570,5 +595,7 @@ void register_all_PluginFyberJS(JSContext* cx, JSObject* obj) {
     obj = ns;
 
     js_register_PluginFyberJS_PluginFyber(cx, obj);
+
+    sdkbox::setProjectType("js");
 }
 #endif

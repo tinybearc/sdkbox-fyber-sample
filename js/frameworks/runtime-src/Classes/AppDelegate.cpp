@@ -11,6 +11,12 @@
 #else
 #include "js_module_register.h"
 #endif
+#include "PluginVungleJS.hpp"
+#include "PluginVungleJSHelper.h"
+#include "PluginChartboostJS.hpp"
+#include "PluginChartboostJSHelper.h"
+#include "PluginAdColonyJS.hpp"
+#include "PluginAdColonyJSHelper.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -69,7 +75,13 @@ bool AppDelegate::applicationDidFinishLaunching()
     }
 #else
    js_module_register();
-   ScriptingCore* sc = ScriptingCore::getInstance();
+    ScriptingCore* sc = ScriptingCore::getInstance();
+    sc->addRegisterCallback(register_all_PluginVungleJS);
+    sc->addRegisterCallback(register_all_PluginVungleJS_helper);
+    sc->addRegisterCallback(register_all_PluginChartboostJS);
+    sc->addRegisterCallback(register_all_PluginChartboostJS_helper);
+    sc->addRegisterCallback(register_all_PluginAdColonyJS);
+    sc->addRegisterCallback(register_all_PluginAdColonyJS_helper);
    sc->start();
    sc->runScript("script/jsb_boot.js");
    ScriptEngineProtocol *engine = ScriptingCore::getInstance();
