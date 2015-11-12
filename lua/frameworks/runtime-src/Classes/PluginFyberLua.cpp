@@ -2,6 +2,7 @@
 #include "PluginFyber/PluginFyber.h"
 #include "tolua_fix.h"
 #include "SDKBoxLuaHelper.h"
+#include "sdkbox/sdkbox.h"
 
 
 
@@ -28,6 +29,19 @@ int lua_PluginFyberLua_PluginFyber_showOffers(lua_State* tolua_S)
             return 0;
         }
         sdkbox::PluginFyber::showOffers();
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
+    if (argc == 1)
+    {
+        std::string arg0;
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0, "sdkbox.PluginFyber:showOffers");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_PluginFyberLua_PluginFyber_showOffers'", nullptr);
+            return 0;
+        }
+        sdkbox::PluginFyber::showOffers(arg0);
         lua_settop(tolua_S, 1);
         return 1;
     }
@@ -96,19 +110,6 @@ int lua_PluginFyberLua_PluginFyber_showOfferWall(lua_State* tolua_S)
             return 0;
         }
         sdkbox::PluginFyber::showOfferWall();
-        lua_settop(tolua_S, 1);
-        return 1;
-    }
-    if (argc == 1)
-    {
-        std::string arg0;
-        ok &= luaval_to_std_string(tolua_S, 2,&arg0, "sdkbox.PluginFyber:showOfferWall");
-        if(!ok)
-        {
-            tolua_error(tolua_S,"invalid arguments in function 'lua_PluginFyberLua_PluginFyber_showOfferWall'", nullptr);
-            return 0;
-        }
-        sdkbox::PluginFyber::showOfferWall(arg0);
         lua_settop(tolua_S, 1);
         return 1;
     }
@@ -274,6 +275,19 @@ int lua_PluginFyberLua_PluginFyber_init(lua_State* tolua_S)
         lua_settop(tolua_S, 1);
         return 1;
     }
+    if (argc == 1)
+    {
+        std::string arg0;
+        ok &= luaval_to_std_string(tolua_S, 2,&arg0, "sdkbox.PluginFyber:init");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_PluginFyberLua_PluginFyber_init'", nullptr);
+            return 0;
+        }
+        sdkbox::PluginFyber::init(arg0);
+        lua_settop(tolua_S, 1);
+        return 1;
+    }
     luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "sdkbox.PluginFyber:init",argc, 0);
     return 0;
 #if COCOS2D_DEBUG >= 1
@@ -317,6 +331,8 @@ TOLUA_API int register_all_PluginFyberLua(lua_State* tolua_S)
 	lua_register_PluginFyberLua_PluginFyber(tolua_S);
 
 	tolua_endmodule(tolua_S);
+
+	sdkbox::setProjectType("lua");
 	return 1;
 }
 
