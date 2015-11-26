@@ -15,6 +15,7 @@
             }
         }, 
         "Chartboost": {
+            "signature": "dd2d41b69ac01b80f443f5b6cf06096d457f82bd", 
             "ads": {
                 "Default": {
                     "type": "interstitial"
@@ -26,8 +27,7 @@
                     "type": "more_app"
                 }
             }, 
-            "id": "4f7b433509b6025804000002", 
-            "signature": "dd2d41b69ac01b80f443f5b6cf06096d457f82bd"
+            "id": "4f7b433509b6025804000002"
         }, 
         "Fyber": {
             "debug": true, 
@@ -67,6 +67,7 @@
             }
         }, 
         "Chartboost": {
+            "signature": "92e2de2fd7070327bdeb54c15a5295309c6fcd2d", 
             "ads": {
                 "Default": {
                     "type": "interstitial"
@@ -78,10 +79,10 @@
                     "type": "more_app"
                 }
             }, 
-            "id": "4f21c409cd1cb2fb7000001b", 
-            "signature": "92e2de2fd7070327bdeb54c15a5295309c6fcd2d"
+            "id": "4f21c409cd1cb2fb7000001b"
         }, 
         "Fyber": {
+            "debug": true, 
             "token": "34a9643edf4d3052d2bc1928b2e34d8d", 
             "ebug": true, 
             "appid": "35561"

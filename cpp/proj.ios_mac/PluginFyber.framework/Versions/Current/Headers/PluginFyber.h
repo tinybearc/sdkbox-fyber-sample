@@ -15,9 +15,11 @@ namespace sdkbox
     static const int FYB_OFFERWALL_DISMISSED = 2;
     static const int FYB_OFFERWALL_ERROR     = 3;
 
-    static const int FYB_REWARDED_VIDEO_STARTED = 1;
-    static const int FYB_REWARDED_VIDEO_DISMISS = 2;
-    static const int FYB_REWARDED_VIDEO_ERROR   = 3;
+    static const int FYB_REWARDED_VIDEO_STARTED  = 1;
+    static const int FYB_REWARDED_VIDEO_FINISHED = 2;
+    static const int FYB_REWARDED_VIDEO_ABORTED  = 4;
+    static const int FYB_REWARDED_VIDEO_ERROR    = 3;
+    static const int FYB_REWARDED_VIDEO_DISMISS  = FYB_REWARDED_VIDEO_FINISHED;
 
 
     class FyberListener
