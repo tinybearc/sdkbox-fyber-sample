@@ -3,9 +3,9 @@
         "engine": "3", 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-26/", 
+            "COCOS_BACKUP_DIR": "backup-2015-11-30/", 
             "COCOS_PROJECT_DIR": "./", 
-            "COCOS_2DX_INSTALLATION_VERSION": "3.6.0", 
+            "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "frameworks/runtime-src/proj.android/", 
             "google_play_services": "/Users/gbox/Android/sdk/extras/google/google_play_services/libproject/google-play-services_lib", 
             "SDKBOX_PLUGIN_NAME": "Fyber", 
@@ -27,7 +27,7 @@
                 "SDKBoxLuaHelper.cpp"
             ], 
             "ANDROID_SDK_DIR": "/Users/gbox/Android/sdk/", 
-            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.6/", 
+            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.8/", 
             "ANDROID_MANIFEST": "frameworks/runtime-src/proj.android/AndroidManifest.xml", 
             "ANDROID_STUDIO_MANIFEST": "n/a", 
             "ANDROID_JNI_DIR": "frameworks/runtime-src/proj.android/jni/", 
@@ -46,9 +46,9 @@
         }, 
         "version": [
             1, 
-            4, 
-            1, 
-            7
+            5, 
+            0, 
+            2
         ], 
         "name": "fyber", 
         "args": {
