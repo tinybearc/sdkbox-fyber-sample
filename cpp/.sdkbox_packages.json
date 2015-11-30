@@ -3,9 +3,9 @@
         "engine": "3", 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-26-6/", 
+            "COCOS_BACKUP_DIR": "backup-2015-11-30-6/", 
             "COCOS_PROJECT_DIR": "./", 
-            "COCOS_2DX_INSTALLATION_VERSION": "3.6.0", 
+            "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "proj.android/", 
             "google_play_services": "/Users/gbox/Android/sdk/extras/google/google_play_services/libproject/google-play-services_lib", 
             "SDKBOX_PLUGIN_NAME": "Vungle", 
@@ -19,7 +19,7 @@
             "COCOS_CLASSES_DIR": "Classes/", 
             "XCODE_PROJECT": "proj.ios_mac/cpp.xcodeproj/project.pbxproj", 
             "ANDROID_SDK_DIR": "/Users/gbox/Android/sdk/", 
-            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.6/", 
+            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.8/", 
             "ANDROID_MANIFEST": "proj.android/AndroidManifest.xml", 
             "ANDROID_STUDIO_MANIFEST": "n/a", 
             "ANDROID_JNI_DIR": "proj.android/jni/", 
@@ -38,9 +38,9 @@
         }, 
         "version": [
             1, 
-            4, 
-            1, 
-            7
+            5, 
+            0, 
+            2
         ], 
         "name": "vungle", 
         "args": {
@@ -84,16 +84,16 @@
         }, 
         "version": [
             1, 
-            4, 
-            1, 
-            7
+            5, 
+            0, 
+            2
         ], 
         "name": "chartboost", 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
             "COCOS_2DX_VERSION": "3.6.0", 
             "COCOS_PROJECT_DIR": "./", 
-            "COCOS_2DX_INSTALLATION_VERSION": "3.6.0", 
+            "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "proj.android/", 
             "google_play_services": "/Users/gbox/Android/sdk/extras/google/google_play_services/libproject/google-play-services_lib", 
             "SDKBOX_PLUGIN_NAME": "Chartboost", 
@@ -107,7 +107,7 @@
             "COCOS_CLASSES_DIR": "Classes/", 
             "XCODE_PROJECT": "proj.ios_mac/cpp.xcodeproj/project.pbxproj", 
             "ANDROID_SDK_DIR": "/Users/gbox/Android/sdk/", 
-            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.6/", 
+            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.8/", 
             "ANDROID_MANIFEST": "proj.android/AndroidManifest.xml", 
             "ANDROID_STUDIO_MANIFEST": "n/a", 
             "ANDROID_JNI_DIR": "proj.android/jni/", 
@@ -115,7 +115,7 @@
             "XCODE_PROJECT_CXX_LIBRARY": "libc++", 
             "ANDROID_STUDIO_MK": "n/a", 
             "XCODE_PROJECT_DIR": "proj.ios_mac/cpp.xcodeproj/", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-26-6/", 
+            "COCOS_BACKUP_DIR": "backup-2015-11-30-6/", 
             "ANDROID_PROPERTIES": "proj.android/project.properties", 
             "ANDROID_ACTIVITY_PATH": "proj.android/src/org/cocos2dx/cpp/", 
             "COCOS_RESOURCES_DIR": "Resources/", 
@@ -147,15 +147,15 @@
         }, 
         "version": [
             1, 
-            4, 
-            1, 
-            7
+            5, 
+            0, 
+            2
         ], 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-26-5/", 
+            "COCOS_BACKUP_DIR": "backup-2015-11-30-5/", 
             "COCOS_PROJECT_DIR": "./", 
-            "COCOS_2DX_INSTALLATION_VERSION": "3.6.0", 
+            "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "proj.android/", 
             "google_play_services": "/Users/gbox/Android/sdk/extras/google/google_play_services/libproject/google-play-services_lib", 
             "SDKBOX_PLUGIN_NAME": "Fyber", 
@@ -169,7 +169,7 @@
             "COCOS_CLASSES_DIR": "Classes/", 
             "XCODE_PROJECT": "proj.ios_mac/cpp.xcodeproj/project.pbxproj", 
             "ANDROID_SDK_DIR": "/Users/gbox/Android/sdk/", 
-            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.6/", 
+            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.8/", 
             "ANDROID_MANIFEST": "proj.android/AndroidManifest.xml", 
             "ANDROID_STUDIO_MANIFEST": "n/a", 
             "ANDROID_JNI_DIR": "proj.android/jni/", 
@@ -210,15 +210,15 @@
         }, 
         "version": [
             1, 
-            4, 
-            1, 
-            7
+            5, 
+            0, 
+            2
         ], 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
             "COCOS_2DX_VERSION": "3.6.0", 
             "COCOS_PROJECT_DIR": "./", 
-            "COCOS_2DX_INSTALLATION_VERSION": "3.6.0", 
+            "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "proj.android/", 
             "google_play_services": "/Users/gbox/Android/sdk/extras/google/google_play_services/libproject/google-play-services_lib", 
             "SDKBOX_PLUGIN_NAME": "AdColony", 
@@ -232,7 +232,7 @@
             "COCOS_CLASSES_DIR": "Classes/", 
             "XCODE_PROJECT": "proj.ios_mac/cpp.xcodeproj/project.pbxproj", 
             "ANDROID_SDK_DIR": "/Users/gbox/Android/sdk/", 
-            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.6/", 
+            "COCOS_2DX_ROOT": "/Applications/Cocos/frameworks/cocos2d-x-3.8/", 
             "ANDROID_MANIFEST": "proj.android/AndroidManifest.xml", 
             "ANDROID_STUDIO_MANIFEST": "n/a", 
             "ANDROID_JNI_DIR": "proj.android/jni/", 
@@ -240,7 +240,7 @@
             "XCODE_PROJECT_CXX_LIBRARY": "libc++", 
             "ANDROID_STUDIO_MK": "n/a", 
             "XCODE_PROJECT_DIR": "proj.ios_mac/cpp.xcodeproj/", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-26-3/", 
+            "COCOS_BACKUP_DIR": "backup-2015-11-30-3/", 
             "ANDROID_PROPERTIES": "proj.android/project.properties", 
             "ANDROID_ACTIVITY_PATH": "proj.android/src/org/cocos2dx/cpp/", 
             "COCOS_RESOURCES_DIR": "Resources/", 
