@@ -3,7 +3,7 @@
         "engine": "3", 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-30-6/", 
+            "COCOS_BACKUP_DIR": "backup-2015-12-02-6/", 
             "COCOS_PROJECT_DIR": "./", 
             "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "proj.android/", 
@@ -40,7 +40,7 @@
             1, 
             5, 
             0, 
-            2
+            3
         ], 
         "name": "vungle", 
         "args": {
@@ -56,7 +56,7 @@
             "server": "download.sdkbox.com/installer/v1/", 
             "forcedownload": 0, 
             "china": 0, 
-            "installer": "/Users/gbox/.sdkbox/bin/sdkbox.pyc", 
+            "installer": "/Users/gbox/Documents/chukong_test/sdkbox-core/tools/installer/sdkbox/bin/sdkbox.pyc", 
             "manifest": "manifest.json", 
             "nopatching": 1, 
             "jsonapi": 0
@@ -76,7 +76,7 @@
             "project": "./", 
             "command": "update", 
             "manifest": "manifest.json", 
-            "installer": "/Users/gbox/.sdkbox/bin/sdkbox.pyc", 
+            "installer": "/Users/gbox/Documents/chukong_test/sdkbox-core/tools/installer/sdkbox/bin/sdkbox.pyc", 
             "china": 0, 
             "nopatchingcpp": 0, 
             "nopatching": 1, 
@@ -86,7 +86,7 @@
             1, 
             5, 
             0, 
-            2
+            3
         ], 
         "name": "chartboost", 
         "constants": {
@@ -115,7 +115,7 @@
             "XCODE_PROJECT_CXX_LIBRARY": "libc++", 
             "ANDROID_STUDIO_MK": "n/a", 
             "XCODE_PROJECT_DIR": "proj.ios_mac/cpp.xcodeproj/", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-30-6/", 
+            "COCOS_BACKUP_DIR": "backup-2015-12-02-6/", 
             "ANDROID_PROPERTIES": "proj.android/project.properties", 
             "ANDROID_ACTIVITY_PATH": "proj.android/src/org/cocos2dx/cpp/", 
             "COCOS_RESOURCES_DIR": "Resources/", 
@@ -140,7 +140,7 @@
             "forcedownload": 0, 
             "nopatchingcpp": 0, 
             "command": "update", 
-            "installer": "/Users/gbox/.sdkbox/bin/sdkbox.pyc", 
+            "installer": "/Users/gbox/Documents/chukong_test/sdkbox-core/tools/installer/sdkbox/bin/sdkbox.pyc", 
             "manifest": "manifest.json", 
             "nopatching": 1, 
             "jsonapi": 0
@@ -149,11 +149,11 @@
             1, 
             5, 
             0, 
-            2
+            3
         ], 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-30-5/", 
+            "COCOS_BACKUP_DIR": "backup-2015-12-02-5/", 
             "COCOS_PROJECT_DIR": "./", 
             "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "proj.android/", 
@@ -202,7 +202,7 @@
             "project": "./", 
             "china": 0, 
             "manifest": "manifest.json", 
-            "installer": "/Users/gbox/.sdkbox/bin/sdkbox.pyc", 
+            "installer": "/Users/gbox/Documents/chukong_test/sdkbox-core/tools/installer/sdkbox/bin/sdkbox.pyc", 
             "command": "update", 
             "nopatchingcpp": 0, 
             "nopatching": 1, 
@@ -212,7 +212,7 @@
             1, 
             5, 
             0, 
-            2
+            3
         ], 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
@@ -240,7 +240,7 @@
             "XCODE_PROJECT_CXX_LIBRARY": "libc++", 
             "ANDROID_STUDIO_MK": "n/a", 
             "XCODE_PROJECT_DIR": "proj.ios_mac/cpp.xcodeproj/", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-30-3/", 
+            "COCOS_BACKUP_DIR": "backup-2015-12-02-3/", 
             "ANDROID_PROPERTIES": "proj.android/project.properties", 
             "ANDROID_ACTIVITY_PATH": "proj.android/src/org/cocos2dx/cpp/", 
             "COCOS_RESOURCES_DIR": "Resources/", 
