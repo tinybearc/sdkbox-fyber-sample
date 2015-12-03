@@ -3,7 +3,7 @@
         "engine": "3", 
         "constants": {
             "ANDROID_STUDIO_JNI_DIR": "n/a", 
-            "COCOS_BACKUP_DIR": "backup-2015-11-30/", 
+            "COCOS_BACKUP_DIR": "backup-2015-12-03/", 
             "COCOS_PROJECT_DIR": "./", 
             "COCOS_2DX_INSTALLATION_VERSION": "3.7.0", 
             "ANDROID_COCOS_PACKAGE_ROOT": "frameworks/runtime-src/proj.android/", 
@@ -48,7 +48,7 @@
             1, 
             5, 
             0, 
-            2
+            3
         ], 
         "name": "fyber", 
         "args": {
@@ -64,7 +64,7 @@
             "server": "download.sdkbox.com/installer/v1/", 
             "forcedownload": 0, 
             "china": 0, 
-            "installer": "/Users/gbox/.sdkbox/bin/sdkbox.pyc", 
+            "installer": "/Users/gbox/Documents/chukong_test/sdkbox-core/tools/installer/sdkbox/bin/sdkbox.pyc", 
             "manifest": "manifest.json", 
             "nopatching": 1, 
             "jsonapi": 0
