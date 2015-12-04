@@ -15,4 +15,4 @@ APP_OPTIM := release
 endif
 
 
-APP_PLATFORM := android-14 android-9
+APP_PLATFORM := android-14
