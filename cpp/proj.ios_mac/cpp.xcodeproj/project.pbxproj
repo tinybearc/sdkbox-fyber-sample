@@ -657,10 +657,10 @@
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SRCROOT}",
-					"/Users/niteluo/Projects/test/cocos/sdkbox-fyber-sample/cpp/proj.ios_mac/",
 					"$(PROJECT_DIR)/Fyber_AdColony_2.6.0-r2.embeddedframework",
 					"$(PROJECT_DIR)/Fyber_Chartboost_5.5.0-r2.embeddedframework",
 					"$(PROJECT_DIR)/Fyber_Vungle_3.2.0-r1.embeddedframework",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -685,12 +685,10 @@
 					"\"sdkbox.framework\"",
 					"\"PluginFyber.framework\"",
 					"\"PluginVungle.framework\"",
-					"\"VungleSDK.framework\"",
 					"\"PluginAdColony.framework\"",
-					"\"AdColony.framework\"",
 					"\"PluginChartboost.framework\"",
-					"\"Chartboost.framework\"",
 				);
+				OTHER_CFLAGS = "-DSDKBOX_ENABLED";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
@@ -713,10 +711,10 @@
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SRCROOT}",
-					"/Users/niteluo/Projects/test/cocos/sdkbox-fyber-sample/cpp/proj.ios_mac/",
 					"$(PROJECT_DIR)/Fyber_AdColony_2.6.0-r2.embeddedframework",
 					"$(PROJECT_DIR)/Fyber_Chartboost_5.5.0-r2.embeddedframework",
 					"$(PROJECT_DIR)/Fyber_Vungle_3.2.0-r1.embeddedframework",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -739,12 +737,10 @@
 					"\"sdkbox.framework\"",
 					"\"PluginFyber.framework\"",
 					"\"PluginVungle.framework\"",
-					"\"VungleSDK.framework\"",
 					"\"PluginAdColony.framework\"",
-					"\"AdColony.framework\"",
 					"\"PluginChartboost.framework\"",
-					"\"Chartboost.framework\"",
 				);
+				OTHER_CFLAGS = "-DSDKBOX_ENABLED";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",

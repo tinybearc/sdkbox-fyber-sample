@@ -140,7 +140,9 @@ public:
         {
             return;
         }
-        // cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+#if (COCOS2D_VERSION >= 0x00030000)
+        cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+#endif
         JSContext* cx = s_cx;
         const char* func_name = "onAdColonyChange";
 
@@ -184,7 +186,9 @@ public:
             JS_CallFunctionName(cx, obj, func_name, sizeof(dataVal)/sizeof(*dataVal), dataVal, &retval);
 #endif
         }
-        // });
+#if (COCOS2D_VERSION >= 0x00030000)
+        });
+#endif
     }
 
     void onAdColonyReward(const sdkbox::AdColonyAdInfo& info, const std::string& currencyName, int amount, bool success)
@@ -193,8 +197,9 @@ public:
         {
             return;
         }
-        // cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
-
+#if (COCOS2D_VERSION >= 0x00030000)
+        cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+#endif
         JSContext* cx = s_cx;
         const char* func_name = "onAdColonyReward";
 
@@ -237,7 +242,9 @@ public:
             JS_CallFunctionName(cx, obj, func_name, sizeof(dataVal)/sizeof(*dataVal), dataVal, &retval);
 #endif
         }
-        // });
+#if (COCOS2D_VERSION >= 0x00030000)
+        });
+#endif
     }
 
     void onAdColonyStarted(const sdkbox::AdColonyAdInfo& info)
@@ -246,7 +253,9 @@ public:
         {
             return;
         }
-        // cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+#if (COCOS2D_VERSION >= 0x00030000)
+        cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+#endif
         JSContext* cx = s_cx;
         const char* func_name = "onAdColonyStarted";
 
@@ -288,7 +297,9 @@ public:
             JS_CallFunctionName(cx, obj, func_name, sizeof(dataVal)/sizeof(*dataVal), dataVal, &retval);
 #endif
         }
-        // });
+#if (COCOS2D_VERSION >= 0x00030000)
+        });
+#endif
     }
 
     void onAdColonyFinished(const sdkbox::AdColonyAdInfo& info)
@@ -297,7 +308,9 @@ public:
         {
             return;
         }
-        // cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+#if (COCOS2D_VERSION >= 0x00030000)
+        cocos2d::Director::getInstance()->getScheduler()->performFunctionInCocosThread([=](){
+#endif
         JSContext* cx = s_cx;
         const char* func_name = "onAdColonyFinished";
 
@@ -339,7 +352,9 @@ public:
             JS_CallFunctionName(cx, obj, func_name, sizeof(dataVal)/sizeof(*dataVal), dataVal, &retval);
 #endif
         }
-        // });
+#if (COCOS2D_VERSION >= 0x00030000)
+        });
+#endif
     }
 
 };
