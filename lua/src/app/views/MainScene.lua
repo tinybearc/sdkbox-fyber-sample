@@ -45,7 +45,7 @@ function MainScene:onCreate()
                     end),
                    cc.MenuItemFont:create("showOfferWall"):onClicked(function()
                         print("sdkbox-fyber showOfferWall");
-                        fyber:showOfferWall("rmb");
+                        fyber:showOfferWall();
                     end),
                    cc.MenuItemFont:create("request offers"):onClicked(function()
                         print("[Fyber] request offers");

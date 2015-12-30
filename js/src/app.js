@@ -97,7 +97,7 @@ var HelloWorldLayer = cc.Layer.extend({
     },
     showOfferWall:function(sender) {
         console.log("sdkbox-fyber: showOfferWall");
-        sdkbox.PluginFyber.showOfferWall("rmb");
+        sdkbox.PluginFyber.showOfferWall();
     },
     requestOffers:function(sender) {
         console.log("sdkbox-fyber: requestOffers");
