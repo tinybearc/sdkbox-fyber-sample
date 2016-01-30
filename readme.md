@@ -14,3 +14,10 @@ Forum:
 
 Fyber:
 [http://www.fyber.com/](http://www.fyber.com/)
+
+**NOTE**
+if you run `sdkbox update` from cpp folder, please remove three iOS frameworks:
+
+- AdColony.framework
+- Vungle.framework
+- Chartboost.framework
