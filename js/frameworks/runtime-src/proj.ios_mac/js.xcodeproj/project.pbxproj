@@ -1002,20 +1002,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DSDKBOX_ENABLED";
-				OTHER_LDFLAGS = (
-					"-force_load",
-					PluginFyber.framework/PluginFyber,
-					"-force_load",
-					PluginFyber.framework/PluginFyber,
-					"-fobjc-arc",
-					"-force_load",
-					AdColony.framework/AdColony,
-					"-ObjC",
-					"-force_load",
-					AdColony.framework/AdColony,
-					"-force_load",
-					PluginFyber.framework/PluginFyber,
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../../../../cocos2d-x-3.6-lib ../../../../cocos2d-x-3.6-lib/cocos ../../../../cocos2d-x-3.6-lib/cocos/base ../../../../cocos2d-x-3.6-lib/cocos/physics ../../../../cocos2d-x-3.6-lib/cocos/math/kazmath ../../../../cocos2d-x-3.6-lib/cocos/2d ../../../../cocos2d-x-3.6-lib/cocos/gui ../../../../cocos2d-x-3.6-lib/cocos/network ../../../../cocos2d-x-3.6-lib/cocos/audio/include ../../../../cocos2d-x-3.6-lib/cocos/editor-support ../../../../cocos2d-x-3.6-lib/extensions ../../../../cocos2d-x-3.6-lib/external ../../../../cocos2d-x-3.6-lib/external/chipmunk/include/chipmunk ../../../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/auto ../../../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/manual";
 			};
@@ -1056,20 +1043,7 @@
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-DSDKBOX_ENABLED",
 				);
-				OTHER_LDFLAGS = (
-					"-force_load",
-					PluginFyber.framework/PluginFyber,
-					"-force_load",
-					PluginFyber.framework/PluginFyber,
-					"-fobjc-arc",
-					"-force_load",
-					AdColony.framework/AdColony,
-					"-ObjC",
-					"-force_load",
-					AdColony.framework/AdColony,
-					"-force_load",
-					PluginFyber.framework/PluginFyber,
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../../../../cocos2d-x-3.6-lib ../../../../cocos2d-x-3.6-lib/cocos ../../../../cocos2d-x-3.6-lib/cocos/base ../../../../cocos2d-x-3.6-lib/cocos/physics ../../../../cocos2d-x-3.6-lib/cocos/math/kazmath ../../../../cocos2d-x-3.6-lib/cocos/2d ../../../../cocos2d-x-3.6-lib/cocos/gui ../../../../cocos2d-x-3.6-lib/cocos/network ../../../../cocos2d-x-3.6-lib/cocos/audio/include ../../../../cocos2d-x-3.6-lib/cocos/editor-support ../../../../cocos2d-x-3.6-lib/extensions ../../../../cocos2d-x-3.6-lib/external ../../../../cocos2d-x-3.6-lib/external/chipmunk/include/chipmunk ../../../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/auto ../../../../cocos2d-x-3.6-lib/cocos/scripting/js-bindings/manual";
 				VALIDATE_PRODUCT = YES;
@@ -1113,10 +1087,7 @@
 					"\"PluginVungle.framework\"",
 				);
 				OTHER_CFLAGS = "-DSDKBOX_ENABLED";
-				OTHER_LDFLAGS = (
-					"-fobjc-arc",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../../../cocos2d-x-3.6-lib/cocos ../../../../cocos2d-x-3.6-lib/cocos/platform/ios ../../../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../../../cocos2d-x-3.6-lib/external/curl/include/ios";
@@ -1161,10 +1132,7 @@
 					"\"PluginVungle.framework\"",
 				);
 				OTHER_CFLAGS = "-DSDKBOX_ENABLED";
-				OTHER_LDFLAGS = (
-					"-fobjc-arc",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) ../../../../cocos2d-x-3.6-lib/cocos ../../../../cocos2d-x-3.6-lib/cocos/platform/ios ../../../../cocos2d-x-3.6-lib/external/spidermonkey/include/ios ../../../../cocos2d-x-3.6-lib/plugin/jsbindings/auto ../../../../cocos2d-x-3.6-lib/plugin/jsbindings/manual ../../../../cocos2d-x-3.6-lib/external/curl/include/ios";
