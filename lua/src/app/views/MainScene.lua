@@ -17,7 +17,7 @@ function MainScene:onCreate()
             elseif eventname == "onVirtualCurrencyConnectorFailed" then
             elseif eventname == "onVirtualCurrencyConnectorSuccess" then
                 coins = coins + args.coins
-                coinsLabel:setString(coins .. " " + args.currencyname)
+                coinsLabel:setString(coins .. " " .. args.currencyname)
             elseif eventname == "onCanShowInterstitial" then
                 if args.available then
                     fyber:showInterstitial()
