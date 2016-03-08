@@ -1,6 +1,6 @@
 /****************************************************************************
 
- Copyright (c) 2014-2015 Chukong Technologies
+ Copyright (c) 2014-2015 SDKBOX Inc
 
  ****************************************************************************/
 #ifndef __PLUGIN_FYBER_H__
@@ -87,8 +87,10 @@ namespace sdkbox
 
         /**
          * Presents the Fyber Mobile OfferWall as a child view controller of your own view controller.
+         *
+         * @placementId (deprecated)
          */
-        static void showOfferWall();
+        static void showOfferWall(const std::string& placementId = "");
 
 
         // rewarded video
@@ -117,7 +119,8 @@ namespace sdkbox
         static void showInterstitial();
 
         /**
-         * Queries the server for BrandEngage offers availability.
+         * Fetches the amount of a given currency earned since the last time this method was 
+         * invoked for the current user ID / app ID combination.
          */
         static void requestDeltaOfCoins(const std::string& currencyId = "");
     };
