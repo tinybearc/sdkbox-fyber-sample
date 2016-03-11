@@ -1,3 +1,8 @@
+.project
+.classpath
+.settings/
+.apt_generated/
+
 build/
 simulator/
 *.zip
